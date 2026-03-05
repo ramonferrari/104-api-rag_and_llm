@@ -1,0 +1,35 @@
+# --- Segurança e Credenciais ---
+# Nunca suba o arquivo real com senhas e endpoints
+config.ini
+.env
+*.pem
+*.crt
+credentials.json
+certs/
+
+# O cache de modelos (2.3GB+) deve ser baixado localmente em cada máquina
+.cache/
+huggingface_models/
+models/
+
+# Seus artigos originais (Propriedade Intelectual ou apenas arquivos pesados)
+data/
+
+# --- Python e Ambiente Virtual ---
+.venv/
+.uv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# --- Logs e Saídas Temporárias ---
+*.log
+log_ingestao.txt
+log_final.txt
+outputs/
+logs/
+
+# --- Bancos DB ---
+vector_db/chroma.sqlite3

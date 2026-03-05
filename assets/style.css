@@ -1,0 +1,48 @@
+/* assets/style.css */
+
+/* ===== ESTILOS ANTIGOS (mantidos) ===== */
+
+/* Cor de fundo do sidebar */
+[data-testid="stSidebar"] {
+    background-color: #e6eeff;
+}
+
+/* Estilo dos botões */
+.stButton > button {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+/* ===== NOVOS ESTILOS (hierarquia sidebar) ===== */
+
+/* Estilo principal */
+.main {
+    padding: 2rem;
+}
+
+h1 {
+    color: #0d6efd;
+}
+
+/* Hierarquia na navegação do sidebar */
+[data-testid="stSidebarNav"] ul {
+    padding-left: 0;
+}
+
+/* Home fica na raiz */
+[data-testid="stSidebarNav"] li:first-child {
+    padding-left: 0;
+}
+
+/* Demais páginas com indentação */
+[data-testid="stSidebarNav"] li:not(:first-child) {
+    padding-left: 1.5rem;
+    border-left: 2px solid #f0f2f6;
+    margin-left: 0.5rem;
+}
+
+/* Hover effect nas páginas */
+[data-testid="stSidebarNav"] li:not(:first-child):hover {
+    border-left-color: #0d6efd;
+}
