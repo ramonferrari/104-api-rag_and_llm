@@ -40,8 +40,6 @@ class RAGEngine:
         except:
             return False
 
-    import os
-
     def query(self, user_query: str, history: list, provider: str, top_k: int, temperature: float):
         # 1. Busca semântica no ChromaDB
         results = self.db.similarity_search_with_relevance_scores(user_query, k=top_k)
